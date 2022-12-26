@@ -1,5 +1,18 @@
 # Edge-augmented Graph Transformer (PyTorch)
 
+## ENVIRONMENT SETUP FIXED 
+
+```
+conda create -y -n egt python=3.8
+conda activate egt
+conda install -y cudatoolkit=11.0 -c pytorch
+conda install -y -c conda-forge compilers
+conda install -y rdkit=2020.09.1 -c conda-forge
+
+pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+pip install pyyaml==5.3.1 ogb==1.3.2 numba==0.50.1
+```
+
 ## News
 
 * 06/21/2022 - The trained checkpoints on the [PCQM4M-V2](https://ogb.stanford.edu/docs/lsc/) have been released. They are available at <https://zenodo.org/record/6680242>. For additional information, see the ["Download Trained Model Checkpoints"](#download-trained-model-checkpoints) section below.
