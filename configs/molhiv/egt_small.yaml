@@ -1,0 +1,20 @@
+scheme: molhiv
+model_name: egt_small
+distributed: false
+batch_size: 32
+model_height: 6
+node_width: 512
+edge_width: 64
+num_heads: 32
+num_epochs: 9
+max_lr: 0.0002
+attn_dropout: 0.3
+lr_warmup_steps: 3000
+lr_total_steps: 10000
+node_ffn_multiplier: 1.0
+edge_ffn_multiplier: 1.0
+upto_hop: 16
+dataloader_workers: 0 # For multi-process data fetch
+scale_degree: true
+num_virtual_nodes: 4
+svd_random_neg: true

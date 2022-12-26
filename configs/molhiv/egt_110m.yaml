@@ -1,7 +1,7 @@
 scheme: molhiv
 model_name: egt_110m
 distributed: false         # Set = true for multi-gpu
-batch_size: 12             # For 6 GPUs: 12//6=2
+batch_size: 8             # For 6 GPUs: 12//6=2
 model_height: 30
 node_width: 768
 edge_width: 64
@@ -14,9 +14,9 @@ lr_total_steps: 3000
 node_ffn_multiplier: 1.0
 edge_ffn_multiplier: 1.0
 upto_hop: 16
-dataloader_workers: 1      # For multi-process data fetch
+dataloader_workers: 0      # For multi-process data fetch
 scale_degree: true
 num_virtual_nodes: 4
 svd_random_neg: true
-pretrained_weights_file: models/pcqm4mv2/egt_110m/checkpoint/model_state
+pretrained_weights_file: models/egt_110m/checkpoint/model_state
                            # ^ For transfer learning from PCQM4Mv2
